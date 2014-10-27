@@ -7,8 +7,9 @@ var Bob = function() {};
 
 Bob.prototype.hey = function(input) {
 //
-// YOUR CODE GOES HERE
+	if (input.toUpperCase() === input && input.toLowerCase() !== input) {
 //
+	if (input.substr(-1) === '?') {
 };
 
 module.exports = Bob;

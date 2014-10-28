@@ -45,7 +45,7 @@ describe("toRoman()", function() {
     expect(toRoman(93)).toEqual('XCIII');
   });
 
-  xit("converts 141", function() {
+  it("converts 141", function() {
     expect(toRoman(141)).toEqual('CXLI');
   });
 

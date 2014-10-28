@@ -1,15 +1,20 @@
-//
-// This is only a SKELETON file for the "Bob" exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
-
 var Bob = function() {};
 
 Bob.prototype.hey = function(input) {
-//
-	if (input.toUpperCase() === input && input.toLowerCase() !== input) {
-//
+	// yelling
+	if (input.toUpperCase() === input && input.toLowerCase() != input) {
+		return 'Whoa, chill out!';
+	}
+	// question
 	if (input.substr(-1) === '?') {
+		return 'Sure.';
+	}
+	// silence
+	if (!input.trim()) {
+		return 'Fine. Be that way!';
+	}
+	// anything else
+	return "Whatever."
 };
 
 module.exports = Bob;
